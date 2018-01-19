@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6832FD5120046A7500AFF17B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832FD5020046A7500AFF17B /* User.swift */; };
+		6832FD5320046A7D00AFF17B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832FD5220046A7D00AFF17B /* Repository.swift */; };
+		6832FD5520046AA500AFF17B /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832FD5420046AA500AFF17B /* GithubAPI.swift */; };
 		68F5940E1FFB480700321B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F5940D1FFB480700321B42 /* AppDelegate.swift */; };
-		68F594101FFB480700321B42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F5940F1FFB480700321B42 /* ViewController.swift */; };
+		68F594101FFB480700321B42 /* MoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F5940F1FFB480700321B42 /* MoyaViewController.swift */; };
 		68F594131FFB480700321B42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F594111FFB480700321B42 /* Main.storyboard */; };
 		68F594151FFB480700321B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F594141FFB480700321B42 /* Assets.xcassets */; };
 		68F594181FFB480700321B42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F594161FFB480700321B42 /* LaunchScreen.storyboard */; };
@@ -27,9 +30,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6832FD5020046A7500AFF17B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6832FD5220046A7D00AFF17B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		6832FD5420046AA500AFF17B /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		68F5940A1FFB480700321B42 /* SwiftAPIClientStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAPIClientStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68F5940D1FFB480700321B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68F5940F1FFB480700321B42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68F5940F1FFB480700321B42 /* MoyaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewController.swift; sourceTree = "<group>"; };
 		68F594121FFB480700321B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68F594141FFB480700321B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68F594171FFB480700321B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,6 +79,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6832FD4A2004675C00AFF17B /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				6832FD4D20046A5900AFF17B /* Models */,
+				6832FD5420046AA500AFF17B /* GithubAPI.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
+		6832FD4B2004677000AFF17B /* siesta */ = {
+			isa = PBXGroup;
+			children = (
+				6832FD4E20046A6100AFF17B /* Models */,
+			);
+			path = siesta;
+			sourceTree = "<group>";
+		};
+		6832FD4C2004677D00AFF17B /* APIKit */ = {
+			isa = PBXGroup;
+			children = (
+				6832FD4F20046A6600AFF17B /* Models */,
+			);
+			path = APIKit;
+			sourceTree = "<group>";
+		};
+		6832FD4D20046A5900AFF17B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6832FD5020046A7500AFF17B /* User.swift */,
+				6832FD5220046A7D00AFF17B /* Repository.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6832FD4E20046A6100AFF17B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6832FD4F20046A6600AFF17B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		68F594011FFB480700321B42 = {
 			isa = PBXGroup;
 			children = (
@@ -93,8 +147,11 @@
 		68F5940C1FFB480700321B42 /* SwiftAPIClientStudy */ = {
 			isa = PBXGroup;
 			children = (
+				6832FD4A2004675C00AFF17B /* Moya */,
+				6832FD4B2004677000AFF17B /* siesta */,
+				6832FD4C2004677D00AFF17B /* APIKit */,
 				68F5940D1FFB480700321B42 /* AppDelegate.swift */,
-				68F5940F1FFB480700321B42 /* ViewController.swift */,
+				68F5940F1FFB480700321B42 /* MoyaViewController.swift */,
 				68F594111FFB480700321B42 /* Main.storyboard */,
 				68F594141FFB480700321B42 /* Assets.xcassets */,
 				68F594161FFB480700321B42 /* LaunchScreen.storyboard */,
@@ -225,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F594101FFB480700321B42 /* ViewController.swift in Sources */,
+				68F594101FFB480700321B42 /* MoyaViewController.swift in Sources */,
+				6832FD5520046AA500AFF17B /* GithubAPI.swift in Sources */,
 				68F5940E1FFB480700321B42 /* AppDelegate.swift in Sources */,
+				6832FD5120046A7500AFF17B /* User.swift in Sources */,
+				6832FD5320046A7D00AFF17B /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
