@@ -22,7 +22,6 @@
 		68F5942F1FFE0AE300321B42 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F594211FFE0AE200321B42 /* ReactiveSwift.framework */; };
 		68F594301FFE0AE300321B42 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F594221FFE0AE200321B42 /* Alamofire.framework */; };
 		68F594311FFE0AE300321B42 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F594231FFE0AE200321B42 /* RxSwift.framework */; };
-		68F594321FFE0AE300321B42 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F594241FFE0AE200321B42 /* Himotoki.framework */; };
 		68F594331FFE0AE300321B42 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F594251FFE0AE200321B42 /* RxCocoa.framework */; };
 		68F594341FFE0AE300321B42 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F594261FFE0AE200321B42 /* Result.framework */; };
 		68F594351FFE0AE300321B42 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F594271FFE0AE200321B42 /* RxMoya.framework */; };
@@ -71,7 +70,6 @@
 				68F5942F1FFE0AE300321B42 /* ReactiveSwift.framework in Frameworks */,
 				68F594301FFE0AE300321B42 /* Alamofire.framework in Frameworks */,
 				68F594311FFE0AE300321B42 /* RxSwift.framework in Frameworks */,
-				68F594321FFE0AE300321B42 /* Himotoki.framework in Frameworks */,
 				68F594331FFE0AE300321B42 /* RxCocoa.framework in Frameworks */,
 				68F594341FFE0AE300321B42 /* Result.framework in Frameworks */,
 				68F594351FFE0AE300321B42 /* RxMoya.framework in Frameworks */,
@@ -117,6 +115,33 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		68BB2E422012FF2F00186C78 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				68F5940F1FFB480700321B42 /* MoyaViewController.swift */,
+				684613662012E33B00FB5D37 /* APIKitViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		68BB2E432012FF4100186C78 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				684613682012ECB600FB5D37 /* String+UrlEscaped.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		68BB2E442012FF5E00186C78 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6832FD4A2004675C00AFF17B /* Moya */,
+				6832FD4B2004677000AFF17B /* siesta */,
+				6832FD4C2004677D00AFF17B /* APIKit */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		68F594011FFB480700321B42 = {
 			isa = PBXGroup;
 			children = (
@@ -137,14 +162,11 @@
 		68F5940C1FFB480700321B42 /* SwiftAPIClientStudy */ = {
 			isa = PBXGroup;
 			children = (
-				6832FD4D20046A5900AFF17B /* Models */,
-				6832FD4A2004675C00AFF17B /* Moya */,
-				6832FD4B2004677000AFF17B /* siesta */,
-				6832FD4C2004677D00AFF17B /* APIKit */,
 				68F5940D1FFB480700321B42 /* AppDelegate.swift */,
-				684613682012ECB600FB5D37 /* String+UrlEscaped.swift */,
-				68F5940F1FFB480700321B42 /* MoyaViewController.swift */,
-				684613662012E33B00FB5D37 /* APIKitViewController.swift */,
+				6832FD4D20046A5900AFF17B /* Models */,
+				68BB2E442012FF5E00186C78 /* Networking */,
+				68BB2E422012FF2F00186C78 /* ViewControllers */,
+				68BB2E432012FF4100186C78 /* Util */,
 				68F594111FFB480700321B42 /* Main.storyboard */,
 				68F594141FFB480700321B42 /* Assets.xcassets */,
 				68F594161FFB480700321B42 /* LaunchScreen.storyboard */,
@@ -251,7 +273,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveMoya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
