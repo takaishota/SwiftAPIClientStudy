@@ -10,7 +10,7 @@ import UIKit
 import Moya
 
 class MoyaViewController: UIViewController {
-    let provider = MoyaProvider<GithubAPI>()
+    let provider = MoyaProvider<MoyaGithubAPI>()
     let userName = "takaishota"
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class MoyaViewController: UIViewController {
                 }
 
             case .failure(let error):
-                print(error)
+                print("[Moya] error: \(error)")
             }
         }
     }

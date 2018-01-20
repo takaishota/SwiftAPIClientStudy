@@ -1,5 +1,5 @@
 //
-//  GithubAPI.swift
+//  MoyaGithubAPI.swift
 //  SwiftAPIClientStudy
 //
 //  Created by 高井　翔太 on 2018/01/09.
@@ -9,12 +9,12 @@
 import Foundation
 import Moya
 
-enum GithubAPI {
+enum MoyaGithubAPI {
     case showUser(String)
     case showRepositories(String)
 }
 
-extension GithubAPI: TargetType {
+extension MoyaGithubAPI: TargetType {
     var baseURL: URL { return URL(string: "https://api.github.com")! }
 
     var path: String {
@@ -50,15 +50,5 @@ extension GithubAPI: TargetType {
 
     var headers: [String : String]? {
         return nil
-    }
-}
-
-private extension String {
-    var urlEscaped: String {
-        return addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
-    }
-
-    var utf8Encoded: Data {
-        return data(using: .utf8)!
     }
 }
