@@ -13,6 +13,8 @@
 		684613652012DC2400FB5D37 /* APIKitGithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684613642012DC2400FB5D37 /* APIKitGithubAPI.swift */; };
 		684613672012E33B00FB5D37 /* APIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684613662012E33B00FB5D37 /* APIKitViewController.swift */; };
 		684613692012ECB600FB5D37 /* String+UrlEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684613682012ECB600FB5D37 /* String+UrlEscaped.swift */; };
+		68BB2E412012FF0200186C78 /* SiestaGithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB2E402012FF0200186C78 /* SiestaGithubAPI.swift */; };
+		68BB2E462013026100186C78 /* SiestaViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB2E452013026100186C78 /* SiestaViewControllers.swift */; };
 		68F5940E1FFB480700321B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F5940D1FFB480700321B42 /* AppDelegate.swift */; };
 		68F594101FFB480700321B42 /* MoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F5940F1FFB480700321B42 /* MoyaViewController.swift */; };
 		68F594131FFB480700321B42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F594111FFB480700321B42 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 		684613642012DC2400FB5D37 /* APIKitGithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKitGithubAPI.swift; sourceTree = "<group>"; };
 		684613662012E33B00FB5D37 /* APIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKitViewController.swift; sourceTree = "<group>"; };
 		684613682012ECB600FB5D37 /* String+UrlEscaped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UrlEscaped.swift"; sourceTree = "<group>"; };
+		68BB2E402012FF0200186C78 /* SiestaGithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiestaGithubAPI.swift; sourceTree = "<group>"; };
+		68BB2E452013026100186C78 /* SiestaViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiestaViewControllers.swift; sourceTree = "<group>"; };
 		68F5940A1FFB480700321B42 /* SwiftAPIClientStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAPIClientStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68F5940D1FFB480700321B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68F5940F1FFB480700321B42 /* MoyaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		6832FD4B2004677000AFF17B /* siesta */ = {
 			isa = PBXGroup;
 			children = (
+				68BB2E402012FF0200186C78 /* SiestaGithubAPI.swift */,
 			);
 			path = siesta;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			children = (
 				68F5940F1FFB480700321B42 /* MoyaViewController.swift */,
 				684613662012E33B00FB5D37 /* APIKitViewController.swift */,
+				68BB2E452013026100186C78 /* SiestaViewControllers.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -298,10 +304,12 @@
 			files = (
 				68F594101FFB480700321B42 /* MoyaViewController.swift in Sources */,
 				6832FD5520046AA500AFF17B /* MoyaGithubAPI.swift in Sources */,
+				68BB2E412012FF0200186C78 /* SiestaGithubAPI.swift in Sources */,
 				68F5940E1FFB480700321B42 /* AppDelegate.swift in Sources */,
 				684613672012E33B00FB5D37 /* APIKitViewController.swift in Sources */,
 				684613692012ECB600FB5D37 /* String+UrlEscaped.swift in Sources */,
 				6832FD5120046A7500AFF17B /* User.swift in Sources */,
+				68BB2E462013026100186C78 /* SiestaViewControllers.swift in Sources */,
 				6832FD5320046A7D00AFF17B /* Repository.swift in Sources */,
 				684613652012DC2400FB5D37 /* APIKitGithubAPI.swift in Sources */,
 			);
